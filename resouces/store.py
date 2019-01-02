@@ -28,7 +28,7 @@ class Store(Resource):
                 store.delete_from_db()
                 return {'message': 'Store is deleted'}
             except:
-                return {'message':'Store is deleted'}
+                return {'message':'An error occurred when delete this store'}
         return {'message':'Store is deleted'}
 
 
