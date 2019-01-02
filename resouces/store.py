@@ -24,7 +24,7 @@ class Store(Resource):
         store = StoreModel.find_by_name(name)
         if store:
             try:
-                store.delete_items()
+                # store.delete_items()
                 store.delete_from_db()
                 return {'message': 'Store is deleted'}
             except:
